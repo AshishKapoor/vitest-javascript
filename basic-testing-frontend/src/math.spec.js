@@ -55,7 +55,6 @@ describe("Math", () => {
     const num2 = 2;
     const resultFn = () => {
       add(num1, num2);
-      console.log('add(num1, num2);: ', add(num1, num2));
     };
     expect(resultFn).toThrow(/is not iterable/);
   });
