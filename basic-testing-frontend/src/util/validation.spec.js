@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import { validateStringNotEmpty, validateNumber } from "./validation";
 
 describe("Validation", () => {
-  describe("validateStringNotEmpty", () => {
+  describe("validateStringNotEmpty()", () => {
     it("should validate the length of string must not be empty", () => {
       const emptyString = "";
       const validateStringNotEmptyFn = () => {
@@ -29,7 +29,7 @@ describe("Validation", () => {
     });
   });
 
-  describe("validateNumber", () => {
+  describe("validateNumber()", () => {
     it("should throw an error if non numeric value is provided", () => {
       const input = "a";
       const validateNumberFn = () => {
